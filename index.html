@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+<script type="text/javascript" language="javascript" src="personale.js"></script>
+<script type="text/javascript" language="javascript" src="macchine.js"></script>
+<script type="text/javascript" language="javascript" src="main.js"></script>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="text-center">
+
+        <div style="width: 100%; height: 5vh;" >
+            <h1 id="topText" class="display-2" style="width: 100%;text-align: center;">Boardgame</h1>
+        </div>
+
+        <div style="width: 100%; height: 50vh;" >
+
+            <h2>Macchine</h2>
+            <div id="div_macchine" style="height: 30%; overflow-y: auto;">
+                
+            </div>
+
+            <h2>Personale</h2>
+            <div id="div_personale" style="height: 50%; overflow-y: auto;">
+                
+            </div>
+
+        </div>
+
+        <div style="width: 100%; height: 10vh;" >
+            
+            <h3 for="reparto_r">Reparto</h3>
+            <nav id="reparto_r" onchange="changedRepartoHandler()">
+
+                <input type="radio" id="r_stampa" name="reparto_r" value="stampa" checked>
+                <label class="radio" for="r_stampa">STAMPA</label>
+
+                <input type="radio" id="r_vern" name="reparto_r" value="verniciatura">
+                <label class="radio" for="r_vern">VERNICIATURA</label>
+
+                <input type="radio" id="r_press" name="reparto_r" value="presse">
+                <label class="radio" for="r_press">PRESSE</label>
+
+                <input type="radio" id="r_ces" name="reparto_r" value="cesoie">
+                <label class="radio" for="r_ces">CESOIE</label>
+
+                <input type="radio" id="r_ct" name="reparto_r" value="centroTaglio">
+                <label class="radio" for="r_ct">CT</label>
+
+            </nav>
+
+            <br/>
+            
+            <h3 for="modificatori_r">Modificatori</h3>
+            <nav id="modificatori_r" onchange="updatePunteggio()">
+
+                <input type="radio" id="mod_base" name="modificatori_r" value=1 checked>
+                <label class="radio" for="mod_base">BASE</label>
+
+                <input type="radio" id="mod_dim" name="modificatori_r" value=0.5>
+                <label class="radio" for="mod_dim">DIMEZZA</label>
+                
+                <input type="radio" id="mod_ferm" name="modificatori_r" value=0>
+                <label class="radio" for="mod_ferm">FERMO</label>
+                
+            </nav>
+
+
+            <h1>Punteggio: </h1>
+            <h1 id="score_view"></h1>
+            </div>
+
+        </div>
+
+    <script>
+        window.onload = init();
+    </script>
+
+</html>
+</body>
