@@ -10,6 +10,13 @@ function init() {
     setPersonale(p);
     p = null;
 
+    window.addEventListener("load",function() {
+        setTimeout(function(){
+            // This hides the address bar:
+            window.scrollTo(0, 1);
+        }, 0);
+    });
+    
 }
 
 function test() {
@@ -160,3 +167,4 @@ function changedRepartoHandler() {
     document.querySelectorAll(".mod_nav").forEach(el => el.style.display = 'none');
     document.querySelectorAll("."+repartoSel).forEach(el => el.style.display = 'flex');
 }
+
