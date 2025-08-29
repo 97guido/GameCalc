@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
-<script type="text/javascript" language="javascript" src="macchine.js"></script>
 <script type="text/javascript" language="javascript" src="main.js"></script>
 <head>
     <link rel="stylesheet" href="index.css">
@@ -10,8 +10,9 @@
 <body>
     <div class="text-center">
 
-        <div style="width: 100%; height: 5vh;" >
-            <h1 id="topText" class="display-2" style="width: 100%;text-align: center;">Boardgame</h1>
+        <div style="width: 100%; height: 10vh;" >
+            <h1 style="width: 40%;float: left;">Punteggio: </h1>
+            <h1 id="score_view"></h1>
         </div>
 
         <div style="width: 100%; height: 50vh;" >
@@ -52,23 +53,68 @@
 
             <br/>
             
-            <h3 for="modificatori_r">Modificatori</h3>
-            <nav id="modificatori_r" onchange="updatePunteggio()">
+            <h3>Modificatori</h3>
+            <nav id="modificatori_r_stampa" onchange="updatePunteggio()" class="mod_nav stampa">
 
-                <input type="radio" id="mod_base" name="modificatori_r" value=1 checked>
-                <label class="radio" for="mod_base">BASE</label>
+                <input type="radio" id="mod_base_stampa" name="modificatori_r_stamp" value=1 checked>
+                <label class="radio" for="mod_base_stampa">BASE</label>
 
-                <input type="radio" id="mod_dim" name="modificatori_r" value=0.5>
-                <label class="radio" for="mod_dim">DIMEZZA</label>
+                <input type="radio" id="mod_dim_stampa" name="modificatori_r_stamp" value=0.5>
+                <label class="radio" for="mod_dim_stampa">DIMEZZA</label>
                 
-                <input type="radio" id="mod_ferm" name="modificatori_r" value=0>
-                <label class="radio" for="mod_ferm">FERMO</label>
+                <input type="radio" id="mod_ferm_stampa" name="modificatori_r_stamp" value=0>
+                <label class="radio" for="mod_ferm_stampa">FERMO</label>
+                
+            </nav>
+            <nav id="modificatori_r_verniciatura" onchange="updatePunteggio()" class="mod_nav verniciatura" style="display: none;">
+
+                <input type="radio" id="mod_base_verniciatura" name="modificatori_r_verniciatura" value=1 checked>
+                <label class="radio" for="mod_base_verniciatura">BASE</label>
+
+                <input type="radio" id="mod_dim_verniciatura" name="modificatori_r_verniciatura" value=0.5>
+                <label class="radio" for="mod_dim_verniciatura">DIMEZZA</label>
+                
+                <input type="radio" id="mod_ferm_verniciatura" name="modificatori_r_verniciatura" value=0>
+                <label class="radio" for="mod_ferm_verniciatura">FERMO</label>
+                
+            </nav>
+            <nav id="modificatori_r_presse" onchange="updatePunteggio()" class="mod_nav presse" style="display: none;">
+
+                <input type="radio" id="mod_base_presse" name="modificatori_r_presse" value=1 checked>
+                <label class="radio" for="mod_base_presse">BASE</label>
+
+                <input type="radio" id="mod_dim_presse" name="modificatori_r_presse" value=0.5>
+                <label class="radio" for="mod_dim_presse">DIMEZZA</label>
+                
+                <input type="radio" id="mod_ferm_presse" name="modificatori_r_presse" value=0>
+                <label class="radio" for="mod_ferm_presse">FERMO</label>
+                
+            </nav>
+            <nav id="modificatori_r_cesoie" onchange="updatePunteggio()" class="mod_nav cesoie" style="display: none;">
+
+                <input type="radio" id="mod_base_cesoie" name="modificatori_r_cesoie" value=1 checked>
+                <label class="radio" for="mod_base_cesoie">BASE</label>
+
+                <input type="radio" id="mod_dim_cesoie" name="modificatori_r_cesoie" value=0.5>
+                <label class="radio" for="mod_dim_cesoie">DIMEZZA</label>
+                
+                <input type="radio" id="mod_ferm_cesoie" name="modificatori_r_cesoie" value=0>
+                <label class="radio" for="mod_ferm_cesoie">FERMO</label>
+                
+            </nav>
+            <nav id="modificatori_r_ct" onchange="updatePunteggio()" class="mod_nav centroTaglio" style="display: none;">
+
+                <input type="radio" id="mod_base_ct" name="modificatori_r_ct" value=1 checked>
+                <label class="radio" for="mod_base_ct">BASE</label>
+
+                <input type="radio" id="mod_dim_ct" name="modificatori_r_ct" value=0.5>
+                <label class="radio" for="mod_dim_ct">DIMEZZA</label>
+                
+                <input type="radio" id="mod_ferm_ct" name="modificatori_r_ct" value=0>
+                <label class="radio" for="mod_ferm_ct">FERMO</label>
                 
             </nav>
 
-
-            <h1>Punteggio: </h1>
-            <h1 id="score_view"></h1>
             </div>
 
         </div>
@@ -78,6 +124,4 @@
     </script>
 
 </html>
-
 </body>
-

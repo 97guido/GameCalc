@@ -11,8 +11,7 @@ body {
 
 label {
     font-weight: 600;
-    width: 80%;
-    display: inline-block;
+    width: 100%;
     text-align: left;
 }
 
@@ -30,7 +29,19 @@ h2, h3 {
     user-select: none;   
 }
 
+#score_view {
 
+    margin: 5%;
+    max-width: 40%;
+    min-width: 10%;
+    min-height: 45%;
+    padding: 2%;
+    background: #b4bef3;
+    border-radius: 50%;
+    color: #323c75;
+    margin-left: 5%;
+    float: left;
+}
 
 /* Toggle Button */
 .cm-toggle {
@@ -110,6 +121,10 @@ nav{
     flex-direction: row;
     flex-wrap: no-wrap;
     background: #323c75;
+
+    max-width: fit-content;
+    width: 100%;
+
 }
 nav input{ display: none; }
 nav label{
