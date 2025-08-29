@@ -31,7 +31,6 @@ h2, h3 {
 
 #score_view {
 
-    margin: 5%;
     max-width: 40%;
     min-width: 10%;
     min-height: 45%;
@@ -39,9 +38,16 @@ h2, h3 {
     background: #b4bef3;
     border-radius: 50%;
     color: #323c75;
-    margin-left: 5%;
     float: left;
+    margin-left: 1em;
+    margin-bottom: 0em;
 }
+
+/* Disable scroll refresh */
+html, body {
+    overscroll-behavior: none;
+}
+
 
 /* Toggle Button */
 .cm-toggle {
