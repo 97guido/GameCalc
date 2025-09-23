@@ -2,7 +2,6 @@ var repartoSel = "stampa"
 var personale = []
 var macchine = []
 
-
 function init() {
     
     let p = prompt("Inserisci password");
@@ -17,6 +16,7 @@ function init() {
         }, 0);
     });
     
+
 }
 
 function test() {
@@ -167,4 +167,3 @@ function changedRepartoHandler() {
     document.querySelectorAll(".mod_nav").forEach(el => el.style.display = 'none');
     document.querySelectorAll("."+repartoSel).forEach(el => el.style.display = 'flex');
 }
-
