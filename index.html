@@ -115,10 +115,13 @@
                 
             </nav>
             
-            <h3>Bonus</h3>
-            <input type="number" id="bonus_input" class="input_num" value=0>
-            <h3>Malus</h3>
-            <input type="number" id="malus_input" class="input_num" value=0>
+            <br/>
+            <h3>Bonus e Malus</h3>
+            <div>
+                <input type="button" id="menus_bonus_btn" value="-5" style="background: #ad5252;" onclick="addBonus(-5)">
+                <input type="number" id="bonus_input" class="input_num" value=0 oninput="setBonus()">
+                <input type="button" id="plus_bonus_btn" value="+5" style="background: #5aaa61;" onclick="addBonus(5)">
+            </div>
 
         </div>
 
