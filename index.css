@@ -47,6 +47,15 @@ h2, h3 {
     color: #323c75;
     margin-bottom: 0em;
     border-radius: 4px;
+    width: 15%;
+    text-align: center;
+}
+
+input[type="button"] {
+    padding: 2%;
+    color: #323c75;
+    background: #b4bef3;
+    border-radius: 4px;
 }
 
 /* Disable scroll refresh */
