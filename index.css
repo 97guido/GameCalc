@@ -11,7 +11,7 @@ body {
 
 label {
     font-weight: 600;
-    width: 100%;
+    /* width: 100%; */
     text-align: left;
 }
 
@@ -26,16 +26,16 @@ h2, h3 {
     background: #5260ad;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none;    /* IE 10 and IE 11 */
-    user-select: none;   
+    user-select: none;
 }
 
 #score_view {
     min-width: 10%;
     min-height: 45%;
-    padding: 2%;
-    background: #b4bef3;
+    padding-inline: 2%;
+    background: #17a83b;
     border-radius: 18px;
-    color: #323c75;
+    color: #cce6c8;
     float: left;
     margin-left: 1em;
     text-align: center;
@@ -47,15 +47,22 @@ h2, h3 {
     color: #323c75;
     margin-bottom: 0em;
     border-radius: 4px;
-    width: 15%;
+    width: 40%;
     text-align: center;
+    
+    box-shadow: none;
+    border: 0;
 }
 
 input[type="button"] {
     padding: 2%;
-    color: #323c75;
+    margin: 1%;
+    min-width: 2em;
+    box-shadow: none;
+    border: 0;
+    /* color: #323c75;
     background: #b4bef3;
-    border-radius: 4px;
+    border-radius: 4px; */
 }
 
 /* Disable scroll refresh */
@@ -73,6 +80,7 @@ html, body {
 	outline: 0;
 	cursor: pointer;
 	margin: 5px;
+    margin-top: 3%;
 }
 
 
@@ -125,7 +133,27 @@ html, body {
 	-o-transition: ease .3s;
 }
 
+.cig_btn {
+    /* margin-left: 10px; */
+    /* padding: 2px 6px; */
+    font-size: small;
+    font-weight: 700;
+    text-align-last: center;
+    background: #fa5306;
+    cursor: pointer;
+    border-radius: 9px;
+    padding:  1.5%;
+    padding-inline: 4%;
+    margin: 1%;
+    vertical-align: middle;
+}
 
+.toggle-label {
+    width: 65%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    display: inline-block;
+}
 
 
 
