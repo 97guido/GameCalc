@@ -144,7 +144,8 @@ html, body {
     border-radius: 9px;
     padding:  1.5%;
     padding-inline: 4%;
-    margin: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     vertical-align: middle;
 }
 
@@ -181,7 +182,7 @@ nav label{
     padding: 10px 16px;
     font-size: xx-small;
     /* border-right: 1px solid #2516a8; */
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.3s;
 }
 /* nav label:last-of-type{ border-right: 0; } */

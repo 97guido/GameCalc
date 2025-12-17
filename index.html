@@ -3,10 +3,28 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
 <script type="text/javascript" language="javascript" src="main.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      const repoPath = '/GameCalc/'; 
+      
+      navigator.serviceWorker.register(`${repoPath}sw.js`, { scope: repoPath })
+        .then(registration => {
+          console.log('Service Worker registrato con successo:', registration.scope);
+        })
+        .catch(error => {
+          console.log('Registrazione Service Worker fallita:', error);
+        });
+    });
+  }
+</script>
 <head>
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="mobile-web-app-capable" content="yes"> -->
+    <link rel="manifest" href="/manifest.json">
 </head>
+<!-- <body fullscreen style="margin:10px; padding:0; overflow:auto;"> -->
 <body>
     <div class="text-center">
 
