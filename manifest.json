@@ -1,7 +1,7 @@
 {
   "name": "GameCalc",
   "short_name": "GameCalc",
-  "start_url": "/",
+  "start_url": "/GameCalc/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
