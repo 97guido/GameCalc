@@ -1,5 +1,5 @@
 // Nome della cache (cambialo quando aggiorni i file del sito)
-const CACHE_NAME = 'gamecalc-pwa-v1';
+const CACHE_NAME = 'gamecalc-pwa-v1.1';
 // Lista dei file da salvare per l'utilizzo offline
 const urlsToCache = [
   './',

@@ -33,7 +33,26 @@
             <h1 id="score_view">0</h1>
         </div>
 
-        <div style="width: 100%; height: 50vh;" >
+        <nav id="reparto_r" onchange="changedRepartoHandler()" style="width: 100%; height: 4vh;">
+
+            <input type="radio" id="r_stampa" name="reparto_r" value="stampa" checked>
+            <label class="radio" for="r_stampa">STAMPA</label>
+
+            <input type="radio" id="r_vern" name="reparto_r" value="verniciatura">
+            <label class="radio" for="r_vern">VERNICIATURA</label>
+
+            <input type="radio" id="r_press" name="reparto_r" value="presse">
+            <label class="radio" for="r_press">PRESSE</label>
+
+            <input type="radio" id="r_ces" name="reparto_r" value="cesoie">
+            <label class="radio" for="r_ces">CESOIE</label>
+
+            <input type="radio" id="r_ct" name="reparto_r" value="centroTaglio">
+            <label class="radio" for="r_ct">CT</label>
+
+        </nav>
+
+        <div id="main_view" style="width: 100%; height: 56vh;" >
 
             <h2>Macchine</h2>
             <div id="div_macchine" style="height: 30%; overflow-y: auto;">
@@ -41,33 +60,15 @@
             </div>
 
             <h2>Personale</h2>
-            <div id="div_personale" style="height: 50%; overflow-y: auto;">
+            <div id="div_personale" style="height: 45%; overflow-y: auto;">
                 
             </div>
 
         </div>
 
-        <div style="width: 100%; height: 10vh;" >
+        <div style="width: 100%; height: 25.4vh;" >
             
-            <h3 for="reparto_r">Reparto</h3>
-            <nav id="reparto_r" onchange="changedRepartoHandler()">
 
-                <input type="radio" id="r_stampa" name="reparto_r" value="stampa" checked>
-                <label class="radio" for="r_stampa">STAMPA</label>
-
-                <input type="radio" id="r_vern" name="reparto_r" value="verniciatura">
-                <label class="radio" for="r_vern">VERNICIATURA</label>
-
-                <input type="radio" id="r_press" name="reparto_r" value="presse">
-                <label class="radio" for="r_press">PRESSE</label>
-
-                <input type="radio" id="r_ces" name="reparto_r" value="cesoie">
-                <label class="radio" for="r_ces">CESOIE</label>
-
-                <input type="radio" id="r_ct" name="reparto_r" value="centroTaglio">
-                <label class="radio" for="r_ct">CT</label>
-
-            </nav>
 
             <br/>
             
@@ -135,7 +136,7 @@
             
             <br/>
 
-            <div style="width: 40%;float: left;padding-bottom: 20%;">
+            <div style="width: 40%;float: left;">
                 <h3>Bonus e Malus</h3>
                 <div>
                     <input type="button" id="menus_bonus_btn" value="-5" style="background: #ad5252;" onclick="addBonus(-5)">
