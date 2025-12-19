@@ -7,7 +7,7 @@ body {
     /* background: linear-gradient(#d0f8ff, #ffcf99); */
     font-family: 'Calibri';
     margin: 5%;
-    height: 100vh;
+    height: 100dvh;
 
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none;    /* IE 10 and IE 11 */
