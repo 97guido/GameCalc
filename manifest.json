@@ -3,8 +3,8 @@
   "short_name": "GameCalc",
   "start_url": "/GameCalc/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#323c75",
+  "theme_color": "#b4bef3",
   "icons": [
     {
       "src": "/GameCalc/icon-192x192.png",
