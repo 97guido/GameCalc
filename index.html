@@ -26,10 +26,10 @@
 </head>
 <!-- <body fullscreen style="margin:10px; padding:0; overflow:auto;"> -->
 <body>
-    <div class="main_container" style="width: 100%; height: 90vh;">
+    <div class="main_container" style="width: 100%; height: 100vh;">
 
         <div style="width: 100%; height: 10%; margin-top:5%" >
-            <h1 style="width: 40%;float: left;">Punteggio: </h1>
+            <h1 style="width: fit-content;float: left; border-radius: 10px;">Punteggio: </h1>
             <h1 id="score_view">0</h1>
         </div>
 
@@ -54,13 +54,13 @@
 
         <div id="main_view" style="width: 100%; height: 56%;" >
 
-            <h2>Macchine</h2>
-            <div id="div_macchine" style="height: 30%; overflow-y: auto;">
+            <h2 class="list_header">Macchine</h2>
+            <div id="div_macchine" style="height: 40%; overflow-y: auto;">
                 
             </div>
 
-            <h2>Personale</h2>
-            <div id="div_personale" style="height: 45%; overflow-y: auto;">
+            <h2 class="list_header">Personale</h2>
+            <div id="div_personale" style="height: 40%; overflow-y: auto;">
                 
             </div>
 
@@ -72,7 +72,7 @@
 
             <br/>
             
-            <h3>Modificatori</h3>
+            <h3 class="list_header">Modificatori</h3>
             <nav id="modificatori_r_stampa" onchange="updatePunteggio()" class="mod_nav stampa">
 
                 <input type="radio" id="mod_base_stampa" name="modificatori_r_stamp" value=1 checked>
@@ -137,7 +137,7 @@
             <br/>
 
             <div style="width: 40%;float: left;">
-                <h3>Bonus e Malus</h3>
+                <h3 class="list_header">Bonus e Malus</h3>
                 <div>
                     <input type="button" id="menus_bonus_btn" value="-5" style="background: #ad5252;" onclick="addBonus(-5)">
                     <input type="number" id="bonus_input" class="input_num" value=0 oninput="setBonus()">
@@ -146,7 +146,7 @@
             </div>
 
             <div style="width: 40%;float: right;">
-                <h3>CIG</h3>
+                <h3 class="list_header">CIG</h3>
                 <div>
                     <input type="number" id="cig_view" class="input_num" value=0 disabled>
                 </div>

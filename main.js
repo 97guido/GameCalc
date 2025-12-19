@@ -229,6 +229,7 @@ function createCheckBoxItem(item, withCig=false) {
         cigCB.id = "CIG_CB " + item.nome;
         cigCB.type = "checkbox";
         cigCB.style.visibility = "hidden";
+        cigCB.style.width = 0;
         cigCB.onclick = function() { changedPersonaleCheckbox(item.nome); updatePunteggio(item.nome); };
         newDiv.appendChild(cigCB);
 
@@ -259,10 +260,10 @@ function changedPersonaleCheckbox(nome) {
     var cigCB = document.getElementById("CIG_CB " + nome);
 
     if (cigCB == undefined || cigCB == null) {
-        divP.style.backgroundColor = cb.checked ? "#b4bef3" : "#5260ad";
+        divP.style.backgroundColor = cb.checked ? "#b4bef3" : ""; // "#5260ad";
     }
     else {
-        divP.style.backgroundColor = cb.checked ? (cigCB.checked ? "#ad5252ff" : "#b4bef3") : "#5260ad";
+        divP.style.backgroundColor = cb.checked ? (cigCB.checked ? "#ad5252ff" : "#b4bef3") : ""; //"#5260ad";
         cigBtn.style.visibility = cb.checked ? "visible" : "hidden";
         cigBtn.style.backgroundColor = cigCB.checked ? "#921212ff" : "#5260ad";
     }
