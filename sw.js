@@ -1,5 +1,5 @@
 // Nome della cache (cambialo quando aggiorni i file del sito)
-const CACHE_NAME = 'gamecalc-pwa-v1.1';
+const CACHE_NAME = 'gamecalc-pwa-v1.2';
 // Lista dei file da salvare per l'utilizzo offline
 const urlsToCache = [
   './',
@@ -8,7 +8,8 @@ const urlsToCache = [
   './main.js',
   './manifest.json',
   './icon-192x192.png',
-  './icon-512x512.png'
+  './icon-512x512.png',
+  './BG_GameCalc.jpeg'
 ];
 
 // Installazione: salva i file nella cache
